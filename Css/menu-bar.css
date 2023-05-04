@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Tajawal', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+header {
+    box-sizing: border-box;
+    position: fixed;
+    width: 110%;
+    padding: 0px 10%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(25, 72, 106), #043153);
+    box-shadow: -5px 5px 5px #23313c;
+    z-index: 40;
+}
+
+.index-page {
+    background: linear-gradient(90deg, rgb(197, 25, 45) 0%, rgb(197, 25, 45) 30%, rgb(25, 72, 106) 30%);
+}
+
+header .logo {
+    width: 100%;
+    text-decoration: none;
+}
+
+header .logo .pic {
+    width: 100%;
+    height: 100vh;
+    background-image: url(..//Elements/MST-Business-Cards.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header .logo .logo-mark {
+    width: 100%;
+}
+
+header .logo h2 {
+    font-weight: 100;
+    color: #bcbcbc;
+    font-size: 35px;
+    line-height: 1;
+}
+
+header .logo h3 {
+    color: #b5b5b5;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+header .menu {
+    display: flex;
+    padding: 20px 60px;
+    /* background-color: rgb(25, 72, 106); */
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    margin: 0 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.menu a:hover {
+    color: rgb(100, 100, 100);
+    background-color: #fff;
+}
+
+@media(max-width:1200px) {
+    header {
+        padding: 5px 2%;
+        display: block;
+    }
+    header .logo {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+    }
+    header .menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
+    .menu a {
+        display: block;
+        padding: 3px 0px;
+    }
+}
+
+@media(max-width:768px) {
+    header .logo {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:414px) {
+    header {
+        width: 100vw;
+        padding: 5px 2%;
+        display: block;
+    }
+    header .menu {
+        width: 100vw;
+        padding: 5px 3px;
+    }
+    .menu a {
+        display: block;
+    }
+    .menu a li {
+        text-align: center;
+        font-size: 12px;
+    }
+}
